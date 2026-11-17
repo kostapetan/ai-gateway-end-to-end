@@ -11,6 +11,9 @@ Terraform that provisions, end to end:
   user-assigned managed identity, and an MCP server whose backend uses **Entra On-Behalf-Of** to
   call the container as the user.
 
+> The Bicep version of this setup, with the Entra objects deployed through the Microsoft Graph Bicep
+> extension, is on the [`main`](https://github.com/kostapetan/ai-gateway-end-to-end/tree/main) branch.
+
 ![Architecture: Microsoft 365 Copilot and Copilot Cowork call Azure AI Gateway, which exchanges the user token On-Behalf-Of and calls the MCP server on Azure Container Apps](docs/diagrams/architecture.svg)
 
 Step by step, one tool call looks like this:
